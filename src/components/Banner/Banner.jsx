@@ -1,7 +1,7 @@
 import BannerImg from '../../assets/images/user.png'
 const Banner = () => {
     return (
-        <div className='pt-10 md:flex mb-24 items-center p-4 md:p-0'>
+        <div className='container mx-auto py-10 lg:pb-0 md:flex mb-24 items-center p-4 md:px-0'>
             <div className='order-2 mb-8 md:mb-0'>
                 <figure>
                     <img className='h-full w-full' src={BannerImg} alt="" />
