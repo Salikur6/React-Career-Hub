@@ -22,7 +22,7 @@ const Header = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to='/' className="btn text-[#1A1919] text-2xl font-bold">CareerHub</Link>
+                    <Link to='/' className="btn text-[#1A1919] text-sm sm:text-2xl font-bold">CareerHub</Link>
                 </div>
                 <div className="navbar-center hidden md:flex">
                     <ul className="menu menu-horizontal px-1  font-semibold">
@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn hover:bg-[#9576FF] bg-[#9576FF] font-bold text-xl text-white">Star Applying</a>
+                    <a className="btn hover:bg-[#9576FF] bg-[#9576FF] font-bold sm:text-xl text-sm text-white">Star Applying</a>
                 </div>
             </div>
         </div>
