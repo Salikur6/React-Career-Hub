@@ -4,7 +4,7 @@ import Features from "../Features/Features";
 
 const Home = () => {
     return (
-        <div className="  ">
+        <div className="">
             <div className="">
                 <div className='bg-[#F9F9FF]'>
                     <Banner></Banner>

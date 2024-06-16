@@ -11,7 +11,7 @@ const Header = () => {
         <li><NavLink to='blogs'>Blogs</NavLink></li>
     </>
     return (
-        <div className="bg-[#F9F9FF]">
+        <div className="bg-[#F9F9FF] z-50">
             <div className="navbar container mx-auto pt-10">
                 <div className="navbar-start">
                     <div className="dropdown">

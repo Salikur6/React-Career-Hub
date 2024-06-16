@@ -1,9 +1,10 @@
 import { CiLocationOn } from "react-icons/ci";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Feature = ({ feature }) => {
     console.log(feature)
-    const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary, } = feature;
+    const { id, logo, job_title, company_name, remote_or_onsite, job_type, location, salary, } = feature;
     return (
         <div className="border border-[#e8e8e8] p-10 mb-10 flex flex-col justify-between">
 
@@ -33,9 +34,9 @@ const Feature = ({ feature }) => {
 
 
             <div>
-                <button className="mt-6 text-xl font-bold text-white btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">
+                <Link to={`/job/${id}`}>    <button className="mt-6 text-xl font-bold text-white btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">
                     View Details
-                </button>
+                </button></Link>
             </div>
 
 

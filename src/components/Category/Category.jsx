@@ -1,9 +1,19 @@
-import { useLoaderData } from "react-router-dom";
+
 import SectionTitles from "../SectionTitles/SectionTitles";
+import { useEffect, useState } from "react";
 
 const Category = () => {
 
-    const categoryData = useLoaderData();
+    // const categoryData = useLoaderData();
+    const [categoryData, setCategoryData] = useState([]);
+
+    useEffect(() => {
+        fetch('../../../public/categories.json')
+            .then(res => res.json())
+            .then(data => setCategoryData(data))
+    }, [])
+
+    console.log(categoryData);
 
     return (
         <div className="container mx-auto mb-24 px-4 lg:px-0">
