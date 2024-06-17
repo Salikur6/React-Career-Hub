@@ -2,17 +2,25 @@ import { useLoaderData, useParams } from "react-router-dom";
 import DetailsTopSection from "../DetailsTopSection/DetailsTopSection";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { MdOutlineSubtitles } from "react-icons/md";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { saveDataToLs } from "../Utility/Utility";
 
 const JobDetails = () => {
     const jobData = useLoaderData();
     const { id } = useParams()
-
-    const jobIdData = jobData.find(job => job.id === parseInt(id));
+    const intId = parseInt(id)
+    const jobIdData = jobData.find(job => job.id === intId);
 
     console.log(jobIdData)
     const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information } = jobIdData;
 
     const { phone, email, address } = contact_information;
+
+    const handleApplyJob = () => {
+        saveDataToLs(intId);
+        toast('You have successfully Applied')
+    }
 
     console.log(contact_information)
     return (
@@ -64,7 +72,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                     <div>
-                        <button className={'w-full text-xl font-bold text-white btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'}>Apply Now</button>
+                        <button onClick={() => handleApplyJob(id)} className={'w-full text-xl font-bold text-white btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]'}>Apply Now</button>
                     </div>
                 </div>
 

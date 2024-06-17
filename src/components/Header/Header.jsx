@@ -30,7 +30,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn hover:bg-[#9576FF] bg-[#9576FF] font-bold sm:text-xl text-sm text-white">Star Applying</a>
+                    <a className="btn hover:bg-[#9576FF] bg-[#9576FF] font-bold sm:text-xl text-sm text-white">Start Applying</a>
                 </div>
             </div>
         </div>
