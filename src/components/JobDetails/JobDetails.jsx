@@ -12,7 +12,7 @@ const JobDetails = () => {
     const intId = parseInt(id)
     const jobIdData = jobData.find(job => job.id === intId);
 
-    console.log(jobIdData)
+    // console.log(jobIdData)
     const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information } = jobIdData;
 
     const { phone, email, address } = contact_information;
@@ -22,7 +22,7 @@ const JobDetails = () => {
         toast('You have successfully Applied')
     }
 
-    console.log(contact_information)
+    // console.log(contact_information)
     return (
         <div className="mb-24">
             <DetailsTopSection title={'Job Details'}></DetailsTopSection>

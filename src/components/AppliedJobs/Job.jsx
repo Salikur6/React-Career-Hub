@@ -2,10 +2,12 @@ import { CiLocationOn } from "react-icons/ci";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const Job = ({ job }) => {
-    console.log(job)
+const Job = ({ job, handleRemoveBtn }) => {
+    // console.log(job)
 
     const { id, logo, job_title, company_name, remote_or_onsite, job_type, location, salary, } = job;
+
+
 
     return (
         <div className="container mx-auto">
@@ -43,6 +45,10 @@ const Job = ({ job }) => {
                     <Link to={`/job/${id}`}>    <button className="mt-6 text-xl font-bold text-white btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">
                         View Details
                     </button></Link>
+
+                    <button onClick={() => handleRemoveBtn(id)} className="mt-6 text-xl font-bold text-white btn btn-error">
+                        Remove
+                    </button>
                 </div>
 
 

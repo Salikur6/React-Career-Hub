@@ -1,7 +1,9 @@
+import ConstructionPage from "../ConstructionPage/ConstructionPage";
+
 const Blogs = () => {
     return (
         <div>
-            This is a Blog Page.
+            <ConstructionPage></ConstructionPage>
         </div>
     )
 }

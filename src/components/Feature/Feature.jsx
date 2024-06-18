@@ -3,7 +3,7 @@ import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 const Feature = ({ feature }) => {
-    console.log(feature)
+    // console.log(feature)
     const { id, logo, job_title, company_name, remote_or_onsite, job_type, location, salary, } = feature;
     return (
         <div className="border border-[#e8e8e8] p-10 mb-10 flex flex-col justify-between">

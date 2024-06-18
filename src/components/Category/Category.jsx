@@ -13,7 +13,7 @@ const Category = () => {
             .then(data => setCategoryData(data))
     }, [])
 
-    console.log(categoryData);
+    // console.log(categoryData);
 
     return (
         <div className="container mx-auto mb-24 px-4 lg:px-0">

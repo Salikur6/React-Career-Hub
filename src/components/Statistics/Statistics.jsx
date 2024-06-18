@@ -1,7 +1,9 @@
+import ConstructionPage from "../ConstructionPage/ConstructionPage";
+
 const Statistics = () => {
     return (
         <div>
-            <h2>This is Statistics Page</h2>
+            <ConstructionPage></ConstructionPage>
         </div>
     )
 }
